@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Page de connexion</title>
+  <link rel="stylesheet" type="text/css" href="CssCalculatrice.css">
+  <script type="text/javascript" src="JsCalculatrice.js">
+
+  </script>
+  
+</head>
+<body>
+    <table class="calculatrice" id="calc">
+        <tr>
+            <td colspan="4" class="affichage">
+                <input type="text" readonly="readonly" name="affichage_input" value="0" id="affichage_input" class="affichage_input" />
+            </td>
+        </tr>
+        <tr>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="7" onclick="javascript:initVar('7');" />
+            </td>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="8"  onclick="javascript:initVar('8');"/> 
+            </td>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="9" onclick="initVar('9');" />
+            </td>
+            <td class="operateur">
+                <input type="button" class="operateur_btn" value="&divide;" onclick="calcul('/');" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="4" onclick="initVar('4');" />
+            </td>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="5" onclick="initVar('5');" />
+            </td>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="6" onclick="initVar('6');" />
+            </td>
+            <td class="operateur">
+                <input type="button" class="operateur_btn" value="x" onclick="calcul('x');"/>
+            </td>
+        </tr>       
+                
+        <tr>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="3" onclick="initVar('3');" />
+            </td>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="2" onclick="initVar('2');" />
+            </td>
+             <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="1" onclick="initVar('1');" />
+            </td>
+            <td class="operateur">
+                <input type="button" class="operateur_btn" value="-" onclick="calcul('-');"/>
+            </td>
+        </tr>            
+       
+        <tr>
+            <td class="chiffre">
+                <input type="button" class="chiffre_btn" value="0" onclick="initVar('1');" />
+            </td>
+            <td class="operateur">
+                <input type="button" class="operateur_btn" value="." onclick="initVar('.');"/>
+            </td>
+            <td class="operateur">
+                <input type="button" class="operateur_btn" value="=" onclick="calcul('=');"/>
+            </td>
+             <td class="operateur">
+                <input type="button" class="operateur_btn" value="+" onclick="calcul('+');"/>
+            </td>
+        </tr>
+                               
+    </table>
+
+</body>
+</html>
